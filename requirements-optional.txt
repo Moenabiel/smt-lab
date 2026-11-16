@@ -1,0 +1,10 @@
+# Optional extras - none are needed to run the lab. Install with:  pip install -r requirements-optional.txt
+# All of these are existing open-source projects (verified to exist at time of writing).
+
+nautilus_trader      # github.com/nautechsystems/nautilus_trader - production engine; use Python 3.12 for it.
+                     # Idea: once a strategy survives walk-forward AND paper trading, port it here for live execution.
+smartmoneyconcepts   # github.com/joshyattridge/smart-money-concepts - FVG, order blocks, BOS/CHoCH, swing highs/lows
+                     # Idea: add as confluence filters in smt_lab/signals.py and re-run the noise check.
+quantstats           # tear-sheet reports from a returns series
+optuna               # smarter parameter search than a grid (beware: more search = more overfitting)
+duckdb               # fast SQL over the parquet files if you outgrow pandas
